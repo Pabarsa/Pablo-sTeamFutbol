@@ -115,7 +115,7 @@ export default function App() {
   const cnt = (w,d) => WO[d].exercises.filter(id=>comp[`${w}_${d}_${id}`]).length;
   const wpct = w => { let t=0,d=0; Object.keys(WO).forEach(dy=>{t+=WO[dy].exercises.length; d+=WO[dy].exercises.filter(id=>comp[`${w}_${dy}_${id}`]).length;}); return t?Math.round(d/t*100):0; };
   const hasFb = (w,d) => FBQ.some(q=>fb[`${w}_${d}_${q.id}`]) || (fbTxt[`${w}_${d}_txt`]||"").trim().length>0;
-  useEffect(()=>{ if(day) setLocalTxt(fbTxt[`${wk}_${day}_txt`]||""); },[day,wk]);
+  useEffect(()=>{ if(day) setLocalTxt(fbTxt[`${wk}_${day}_txt`]||""); },[day,wk,fbTxt]);
 
   const wd = WEEKS_DATA[wk-1]; const rs = getRepsProgression(wk); const ac = wd.color;
   const M = { fontFamily:"'JetBrains Mono',monospace" };
