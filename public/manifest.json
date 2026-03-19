@@ -1,25 +1,73 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Pablo's Training",
+  "name": "Pablo's Team Training App",
+  "description": "Aplicación PWA para trackear entrenamientos. 8 semanas de entrenamiento intenso con progresión de pesos, feedback y funcionalidad offline.",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "purpose": "any"
     },
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait-primary",
+  "theme_color": "#0a0e14",
+  "background_color": "#0a0e14",
+  "screenshots": [
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": ["sports", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Ver entrenamientos",
+      "short_name": "Entrenamientos",
+      "description": "Ver todos los entrenamientos de esta semana",
+      "url": "/?page=home",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
 }
